@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock css %}
+    
+{% block body %}
+<h1 id="font_heading">
+       We only <span style="color: aqua;">Teach</span><br>
+    what we are really<br>
+       really <span style="color: aqua;">Good</span> at!! 
+        <p id="para1">                           Get ready to <span style="color: aqua;font-family:Georgia, 'Times New Roman', Times, serif;">Accelerate your career </span> <br>
+                           with customerized courses and leave <br>
+                           your mark in the tech industry</p>
+       <a href="{% url 'myapp1:courses' %}"><button id="button1" style="background-color: aqua;">Check Courses-Make an Impact</button></a>
+       <!-- <script src="{% static 'course.js' %}"></script>--> <br> <br>
+    <div id="a">
+        <big><big>25k+</big></big><br>
+        Students taught 
+    </div> 
+    <div id="b">
+        <big><big>20+</big></big><br>
+        Instructors 
+    </div> 
+    <div id="c">
+        <big><big>431k+</big></big><br>
+        Youtube Subs.
+    </div> <br> <br>   
+    <h3><p id="para2">we do whatever it takes to help you <br>
+        <span style="color: aqua;padding-left: 60px;">understand the concepts.</span></h3> <br>
+     <div id="youtube1">
+      <iframe width="800" height="500" style="margin-left: 260px;cursor: pointer;" src="https://www.youtube.com/embed/TjPFZaMe2yw?si=lIsz4pJNi_jJuAoV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
+     <a href="https://www.youtube.com/@Akash.n2611"><button id="button2" style="background-color: aqua;margin-top: 20px;">Explore Free Learning</button></a> <br> <br>
+     <h2>Courses offered</h2> <br>
+     <div id="container1" style="width: 300px;height: 400px; background-color: black;margin-left: 50px;border-radius: 10px;cursor: pointer;">
+      <link rel="stylesheet" href="">
+      <a href="https://roadmap.sh/frontend"><img src="../static/images/Frontend.jpeg" alt="" style="width: 300px;height: 150px;border-radius: 10px;cursor: pointer;"></a><br> <br> <span style="padding-top: 90px;color: white;padding-left: 50px;font-size: 20px;">Front-End Domination</span> <br> <br> <button style="color: black;margin-left: 110px;font-size: 20px;cursor: pointer;" disabled>HINDI</button> <br> <br>  <span style="color: lime;margin-top: 20px;margin-left: 20px;">Limited Time Discount</span> <br> <span style="color:dodgerblue;margin-top: 10px;margin-left: 20px;"><big><big>₹4999 </big></big><del style="color: grey;">₹9999</del></span> <button style="background-color: white;color: black;border-radius: 5px;border-color: black; margin-left: 50px;width: 90px;">50% OFF</button> <br> <a href="https://roadmap.sh/frontend"><button style="color: black;background-color: lime;width: 200px;font-size: 30px;margin-top: 20px;margin-left: 50px;border-radius: 5px;cursor: pointer;">View Details</button></a>
+     </div> 
+   <div id="container2" style="width: 300px;height: 400px; background-color: black;margin-left: 130px;border-radius: 10px;cursor: pointer;">
+    <link rel="stylesheet" href="">
+    <a href="https://roadmap.sh/backend"><img src="../static/images/Backend.jpg" alt="" style="width: 300px;height: 150px;border-radius: 10px;cursor: pointer;"></a><br> <br> <span style="padding-top: 90px;color: white;padding-left: 50px;font-size: 20px;">Back-End Domination</span> <br> <br> <button style="color: black;margin-left: 110px;font-size: 20px;cursor: pointer;" disabled>HINDI</button> <br> <br>  <span style="color: lime;margin-top: 20px;margin-left: 20px;">Limited Time Discount</span> <br> <span style="color:dodgerblue;margin-top: 10px;margin-left: 20px;"><big><big>₹5999 </big></big><del style="color: grey;">₹11999</del></span> <button style="background-color: white;color: black;border-radius: 5px;border-color: black; margin-left: 50px;width: 90px;">50% OFF</button> <br> <a href="https://roadmap.sh/backend"><button style="color: black;background-color: lime;width: 200px;font-size: 30px;margin-top: 20px;margin-left: 50px;border-radius: 5px;cursor: pointer;">View Details</button></a>
+   </div> 
+   <div id="container3" style="width: 300px;height: 400px; background-color: black;margin-left: 900px;border-radius: 10px;cursor: pointer;">
+    <link rel="stylesheet" href="">
+    <a href="https://www.geeksforgeeks.org/how-to-become-a-database-developer/"><img src="../static/images/Database.jpg" alt="" style="width: 300px;height: 150px;border-radius: 10px;cursor: pointer;"></a><br> <br> <span style="padding-top: 90px;color: white;padding-left: 50px;font-size: 20px;">DataBases Domination</span> <br> <br> <button style="color: black;margin-left: 90px;font-size: 20px;cursor: pointer;" disabled>HINGLISH</button> <br> <br>  <span style="color: lime;margin-top: 20px;margin-left: 20px;">Black Friday Sale</span> <br> <span style="color:dodgerblue;margin-top: 10px;margin-left: 20px;"><big><big>₹999 </big></big><del style="color: grey;">₹1500</del></span> <button style="background-color: white;color: black;border-radius: 5px;border-color: black; margin-left: 50px;width: 90px;">33% OFF</button> <br> <a href="https://www.geeksforgeeks.org/how-to-become-a-database-developer/"><button style="color: black;background-color: lime;width: 200px;font-size: 30px;margin-top: 20px;margin-left: 50px;border-radius: 5px;cursor: pointer;">View Details</button></a>
+   </div> 
+   <div id="container4" style="width: 300px;height: 400px; background-color: black;margin-left: 50px; margin-top: 20px;border-radius: 10px;cursor: pointer;">
+    <link rel="stylesheet" href="">
+    <a href="https://www.indiabix.com/"><img src="../static/images/Apti&Reasoning.jpg" alt="" style="width: 300px;height: 150px;border-radius: 10px;cursor: pointer;"></a><br> <br> <span style="padding-top: 90px;color: white;padding-left: 50px;font-size: 20px;">Aptitude & Reasoning</span> <br> <br> <button style="color: black;margin-left: 90px;font-size: 20px;cursor: pointer;" disabled>ENGLISH</button> <br> <br>  <span style="color: lime;margin-top: 20px;margin-left: 20px;">Limited Time Discount</span> <br> <span style="color:dodgerblue;margin-top: 10px;margin-left: 20px;"><big><big>₹4999 </big></big><del style="color: grey;">₹9999</del></span> <button style="background-color: white;color: black;border-radius: 5px;border-color: black; margin-left: 50px;width: 90px;">50% OFF</button> <br> <a href="https://www.indiabix.com/"><button style="color: black;background-color: lime;width: 200px;font-size: 30px;margin-top: 20px;margin-left: 50px;border-radius: 5px;cursor: pointer;">View Details</button></a>
+   </div> 
+   <div id="container5" style="width: 300px;height: 400px; background-color: black;margin-left: 480px; margin-top: 20px;border-radius: 10px;cursor: pointer;">
+    <link rel="stylesheet" href="">
+    <a href="https://roadmap.sh/python"><img src="../static/images/Python.jpg" alt="" style="width: 300px;height: 150px;border-radius: 10px;cursor: pointer;"></a><br> <br> <span style="padding-top: 90px;color: white;padding-left: 70px;font-size: 20px;">Python Domination</span> <br> <br> <button style="color: black;margin-left: 90px;font-size: 20px;cursor: pointer;" disabled>HINGLISH</button> <br> <br>  <span style="color: lime;margin-top: 20px;margin-left: 20px;">Black Friday Sale</span> <br> <span style="color:dodgerblue;margin-top: 10px;margin-left: 20px;"><big><big>₹2499 </big></big><del style="color: grey;">₹3500</del></span> <button style="background-color: white;color: black;border-radius: 5px;border-color: black; margin-left: 50px;width: 90px;">29% OFF</button> <br> <a href="https://roadmap.sh/python"><button style="color: black;background-color: lime;width: 200px;font-size: 30px;margin-top: 20px;margin-left: 50px;border-radius: 5px;cursor: pointer;">View Details</button></a>
+   </div> 
+     <h3><p id="para3">Top <span style="color: aqua;">Companies </span>our Students<br>
+    <span style="padding-left: 110px;">working with</span></h3> 
+    <div id="companypic">
+      <img src="{% static 'images/Allcompanies.png'%}" alt="" allowfullscreen style="width: 800px;">
+    </div> <br>
+    <a href="{% url 'myapp1:courses' %}"><button id="button3" style="background-color: aqua;">Explore Courses</button></a> <br> <br>
+  <hr style="width: 1150px;">
+    <section id="footer">
+      <div class="top">
+        <div class="footer-section">
+          <big><big><big><big><big>🐯</big></big></big></big></big>
+          <p style="color: white;">Let’s connect with our socials</p>
+          <div class="socials">
+            <a target="_blank" href="https://www.instagram.com/akashnutakki"><i style="font-size: 30px;filter: brightness(10px);" class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://in.linkedin.com/in/akash-nutakki"><i style="font-size: 30px;filter: brightness(10px);" class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://discord.gg/D23JkFqrgz"><i style="font-size: 30px;filter: brightness(10px);" class="fa-brands fa-discord"></i></a>
+            <a target="_blank" href="https://www.youtube.com/@Akash.n2611"><i style="font-size: 30px;filter: brightness(10px);" class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="https://x.com/AkashNutakki"><i style="font-size: 30px;filter: brightness(10px);" class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+          <div class="footer-section">
+            <h4 style="color: white;" id="company">
+              COMPANY
+            </h4>
+            <div class="options">
+              <a style="color: aqua;" target="_blank" href="/aboutUs">About Us</a> <br> 
+              <a style="color: aqua;" href="mailto:akash.n4243@gmail.com">Support</a> <br>
+              <a style="color: aqua;" target="_blank" href="/terms-and-conditions/Terms_and_Conditions.pdf">Privacy Policy</a> <br>
+              <a style="color: aqua;" target="_blank" href="/terms-and-conditions/Terms_and_Conditions.pdf">Terms and Condition</a> <br>
+              <a style="color: aqua;" target="_blank" href="/Pricing&amp;Refund-Policy/Pricing-and-Refund_policy.pdf">Pricing and Refund</a> <br>
+              <a style="color: aqua;" target="_blank" href="/hire">Hire From Us</a> <br>
+              <a style="color: aqua;" target="_blank" href="https://ik.imagekit.io/sheryians/Bug_8EBE0pzVa.pdf">Bug Bounty</a> <br>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 style="color: white;" id="community">COMMUNITY</h4>
+            <div class="options">
+              <a style="color: aqua;" target="_blank" href="https://www.instagram.com/akashnutakki">Inertia</a> <br>
+              <a style="color: aqua;" target="_blank" href="https://discord.gg/D23JkFqrgz">Discord</a> <br>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 style="color: white;" id="getintouch">Get In Touch</h4>
+      
+            <div class="options">
+              <a style="color: aqua;" href="tel:+918328600351">+91 8328600351,</a> <br>
+              <a style="color: aqua;" href="tel:+919515201814">+91 9515201814</a> <br>
+              <a style="color: aqua;" href="mailto:akash.n4243@gmail.com">akash.n4243@gmail.com</a> <br>
+              <a style="color: aqua;" target="_blank" href="https://www.google.com/maps/place/Sheryians+Coding+School/@23.2512609,77.4627502,17z/data=!3m1!4b1!4m6!3m5!1s0x397c43977890a98d:0x928a948dc6de732e!8m2!3d23.251256!4d77.4653251!16s%2Fg%2F11gvy2g2z8">137/11, K.P.H.B Colony,Kukatpally,Hyderabad,
+                Telangana(TS), 500085</a> <br>
+            </div>  
+          </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <hr style="width: 1150px;">
+        <div class="bottom">
+          <h5 style="text-align: center;margin-top: 40px;">Copyright © 2024 Akash Pvt. Ltd. <br> All Rights Reserved.</h5>
+        </div>
+      </section>
+</h1>
+{% endblock body %}
+    
+{% block title %}
+🐯 Akash Coding School 
+{% endblock title %}

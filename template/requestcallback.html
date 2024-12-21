@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/requestcallback.css' %}">
+{% endblock css %}
+    
+{% block body %}
+<!-- <h1>This the Request Callback Page</h1> -->
+
+<!-- <button id="requestBtn">Request Callback</button> -->
+
+
+<div id="callbackModal" class="modal" style="background-color: black;width: 750px;padding-right: 50px;height: 400px;margin-left: 250px;">
+    <div class="modal-content">
+        <span class="close-btn" style="color: red;padding-left: 780px;font-size: 30px;">&times;</span>
+        <h2 style="color: aqua;padding-left: 300px;">Request a Callback</h2>
+        <p style="color: aqua;padding-left: 220px;">Fill the form below to request a callback from our team.</p>
+        <form>
+           
+            <label for="name" style="color: aqua;padding-left: 300px;padding-top: 10px;">Name</label> <br>
+            <input type="text" id="name" class="form-input" placeholder="Your Name" required style="margin-left: 300px;"> <br> <br>
+
+           
+            <label for="phone" style="color: aqua;padding-left: 300px;padding-top: 10px;">Phone</label> <br>
+            <input type="tel" id="phone" class="form-input" placeholder="📞 Phone" required style="margin-left: 300px;"> <br> <br>
+
+            
+            <label for="datetime" style="color: aqua;padding-left: 300px;padding-top: 10px;">Select Date and Time</label> <br>
+            <input type="datetime-local" id="datetime" class="form-input" required style="margin-left: 300px;"> <br> <br>
+
+            
+            <button type="submit" class="submit-btn" style="width:120px;margin-left: 300px;padding-top: 0px;">Submit</button>
+        </form>
+    </div>
+</div> 
+
+
+
+{% endblock body %}
+    
+{% block title %}
+🐯 Req-Callback
+{% endblock title %}

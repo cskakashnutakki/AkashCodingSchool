@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+              
+        {% endblock title %}
+    </title>
+    {% block css %}
+        
+    {% endblock css %}
+    <style> 
+          body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            /* filter: blur(1px); */
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar .hamburger {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+         /* Responsive Styles */
+         @media (max-width: 768px) {
+            .navbar .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .navbar .menu.active {
+                display: flex;
+            }
+
+            .navbar .hamburger {
+                display: block;
+            }
+        }
+    </style>
+    <script src="{% static 'script.js' %}"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+       <div class="logo">🐯 Akash Coding School</div>
+        <div class="menu">
+            <a href="{% url 'myapp1:home' %}">Home</a>
+            <a href="{% url 'myapp1:courses' %}">Courses</a>
+            <a href="{% url 'myapp1:bootcamp' %}">Bootcamp(Kodr)</a>
+            <a href="{% url 'myapp1:requestcallback' %}">Request Callback</a>
+            <a href="{% url 'myapp1:signin' %}"><button style="background-color: aqua;border-radius: 10px;border-color: black;">Sign In</button></a>
+        </div>
+        <div class="hamburger">&#9776;</div>
+    </nav>
+
+    {% block body %}
+    <h1>this is BODY Page</h1>      /* optional */
+    {% endblock body %}
+    
+
+</body>
+</html>

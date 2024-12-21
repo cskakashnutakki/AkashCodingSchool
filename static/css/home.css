@@ -1,0 +1,105 @@
+body{
+    height: 3400px;
+    background-image: linear-gradient(75deg,blue,black);
+    background-repeat: repeat-y;
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url(../fonts/NeueMachina-Regular.otf);
+}
+
+#font_heading{
+    font-size: 65px;
+    text-align: center;
+    font-family: NeueMachina;
+    color: white;
+}
+
+#button1{
+    width: 450px;
+    height: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: black;
+    margin-left: 10px;
+    cursor:pointer;
+}
+
+#para1{
+    font-size: 12px;
+    padding-left: 800px;
+    margin-bottom:  0px;
+}
+
+#a,#b,#c{
+    float: left;
+    font-size: 25px;
+    padding-left: 190px;
+}
+
+#para2{
+    font-size: 35px;
+    color: white;
+    font-family: NeueMachina;
+    padding-left: 350px;
+}
+
+#button2{
+   width: 300px;
+   height: 60px;
+   font-size: 20px;
+    border-radius: 10px;
+    border: black;
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+h2{
+    font-family: NeueMachina;
+    color: white;
+    font-size: 40px;
+    padding-left: 80px;
+}
+
+#container1,#container2,#container4{
+    float: left;
+}
+
+#para3{
+    font-family: NeueMachina;
+    font-size: 35px;
+    padding-left: 400px;
+    color: white;
+}
+
+#companypic{
+    width: 900px;
+    height: 180px;
+    margin-left: 240px;
+    margin-bottom: 30px;
+}
+
+#button3{
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+     border-radius: 10px;
+     border: black;
+     margin-left: 500px;
+     cursor: pointer;
+ }
+
+ .footer-section{
+    padding-left: 60px;
+    padding-top: 20px;
+    float: left;
+ }
+
+ .bottom{
+    text-align: center;
+ }
+
+ 

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/signin.css' %}">
+{% endblock css %}
+    
+{% block body %}
+<!-- <h1>This the Sign IN Page</h1> -->
+
+
+<!-- <div id="containerbackground">
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+</div> -->
+
+<div id="containerLogin">
+    <form action="">
+        <h1>Sign In Page</h1>
+        <input type="email" placeholder="Enter the email" required>
+        <input type="password"    placeholder="Enter the Password" required>
+        <input id="Signupbutton" type="submit" value="Signup">
+        <p>Create an Account</p>
+    </form>
+</div>
+
+<div id="button-container" class="body">
+    <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-context="signup"
+         data-ux_mode="popup"
+         data-login_uri="YOUR_REDIRECT_URI"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-shape="rectangular"
+         data-theme="outline"
+         data-text="signup_with"
+         data-size="large"
+         data-logo_alignment="left">
+    </div>
+</div>
+{% endblock body %}
+    
+{% block title %}
+🐯 Sign-IN
+{% endblock title %}

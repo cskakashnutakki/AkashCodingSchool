@@ -1,0 +1,24 @@
+body{
+    height: 1800px;
+    background-image: linear-gradient(75deg,blue,black);
+    background-repeat: repeat-y;
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url(../fonts/NeueMachina-Ultrabold.otf);
+}
+
+#container6,#container7,#container9{
+    float: left;
+}
+
+.footer-section{
+    padding-left: 60px;
+    padding-top: 25px;
+    float: left;
+ }
+
+ .bottom{
+    text-align: center;
+ }
