@@ -12,7 +12,7 @@
 <!-- <button id="requestBtn">Request Callback</button> -->
 
 
-<div id="callbackModal" class="modal" style="background-color: black;width: 750px;padding-right: 50px;height: 400px;margin-left: 250px;">
+<!-- <div id="callbackModal" class="modal" style="background-color: black;width: 750px;padding-right: 50px;height: 400px;margin-left: 250px;">
     <div class="modal-content">
         <span class="close-btn" style="color: red;padding-left: 780px;font-size: 30px;">&times;</span>
         <h2 style="color: aqua;padding-left: 300px;">Request a Callback</h2>
@@ -34,8 +34,15 @@
             <button type="submit" class="submit-btn" style="width:120px;margin-left: 300px;padding-top: 0px;">Submit</button>
         </form>
     </div>
-</div> 
+</div>  -->
 
+
+<h1>Request a Callback</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
 
 
 {% endblock body %}

@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+
+# from .models import courses,callback
+
+from .forms import callbackForm
 
 # Create your views here.
 
@@ -12,7 +16,15 @@ def bootcamp(request):
     return render(request, 'bootcamp.html')
 
 def requestcallback(request):
-    return render(request, 'requestcallback.html')
+    if request.method=='POST':
+        form=callbackForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('myapp1:home')    
+    return render(request, 'requestcallback.html',{'form':callbackForm()})
 
 def signin(request):
     return render(request, 'signin.html')
+
+# def courses(request,id):
+#     return render(request, 'courses.html')
