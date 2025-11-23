@@ -10,7 +10,7 @@ You can copy-paste this directly into your repository.
 
 A modern, responsive e-learning website built using **Django**, deployed on **Vercel**, and designed to help learners accelerate their tech careers with high-quality courses and bootcamps.
 
-🌐 **Live Demo:**  
+🌐 **Live Preview:**  
 👉 https://akash-coding-school.vercel.app/
 
 ---
@@ -54,19 +54,49 @@ A modern, responsive e-learning website built using **Django**, deployed on **Ve
 
 ## 📂 Project Structure
 
-
-AkashCodingSchool/  <br>
-├── AkashCodingSchool/  <br>
-├── myapp1/ <br>
-├── static/ <br>
-├── staticfiles/ <br>
-├── template/ <br>
-├── manage.py   <br>
-├── requirements.txt    <br>
-├── vercel.json   <br>
+```
+📦 AkashCodingSchool  
+├── AkashCodingSchool/
+│   └── __pycache__/
+│       └── ...
+│   └── ...
+├── myapp1/
+│   └── __pycache__/
+│       └── ...
+│   └── migrations/
+│       └── ...
+│   └── ...
+├── static/ 
+│   └── css/
+│       └── ...
+│   └── fonts/
+│       └── ...
+│   └── images/
+│       └── ...
+│   └── js/
+│       └── ...
+│   └── script.js
+│   └── style.css
+├── staticfiles/ 
+│   └── admin/
+│       └── ...
+│   └── css/
+│       └── ...
+│   └── fonts/
+│       └── ...
+│   └── images/
+│       └── ...
+│   └── js/
+│   └── script.js
+│   └── style.css
+├── template/
+│   └── ...
+├── manage.py   
+├── requirements.txt    
+├── vercel.json   
 ├── db.sqlite3   
 
-
+```
 
 ---
 
